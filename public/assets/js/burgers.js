@@ -5,7 +5,7 @@ $(function() {
     var isDevoured = $(this).data("isDevoured");
 
     var devouredState = {
-      devour: isDevoured
+      devoured: isDevoured
     };
 
     // Send the PUT request.
@@ -27,6 +27,7 @@ $(function() {
 
     var newBurger = {
       name: $("#burg").val().trim(),
+      
       // sleepy: $("[name=sleepy]:checked").val().trim()
     };
 
