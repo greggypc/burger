@@ -1,6 +1,6 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
-  $(".devour-burger").on("click", function(event) {
+  $(".devour").on("click", function(event) {
     var id = $(this).data("id");
     var devour = $(this).data("devoured");
 
@@ -26,7 +26,7 @@ $(function() {
     event.preventDefault();
 
     var newBurger = {
-      name: $("#burg").val().trim(),
+      burger_name: $("#burg").val().trim(),
       devoured: 0
     };
 
