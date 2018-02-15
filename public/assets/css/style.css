@@ -17,3 +17,16 @@ li {
 .form-group {
   margin-bottom: 5px;
 }
+
+h1, h2, h3, p {
+  text-align: center;
+}
+
+#img-burger {
+  width: 200px;
+  margin: auto 0;
+}
+
+.header-center {
+  text-align: center;
+}
