@@ -1,28 +1,6 @@
 
 <section class="row">
 			<div class="col-lg-4 col-md-4">
-				<div class="row">	</div>
-			</div>
-
-			<div class="col-lg-4 col-md-2">
-				<div class="row">
-						<div class="col-lg-12 header-center">
-        <div><img id="img-burger" src="../assets/images/burger-icon-black.png" alt="burger" /></div>
-				<h1>EAT DA BURGER!</h1>
-				<h3>If you can dream it, you can eat it!</h3>
-				<p>Create a burger. Watch it magically appear and when you're ready...</p>
-        <h1>DEVOUR IT!</h1>
-			</div>
-				</div>
-				
-			</div>
-			<div class="col-lg-4 col-md-4">
-				<div class="row"></div>
-			</div>
-</section>
-
-<section class="row">
-			<div class="col-lg-4 col-md-4">
 				<div class="row">
 					<div class="col-lg-12 col-md-12">
 						<div><h2>Burger to Eat</h2></div>
@@ -31,7 +9,7 @@
               {{#each burger}}
                 {{#unless devoured}}
                  <li>{{burger_name}}
-                    <button class="devour" data-id="{{id}}" data-devour="{{devoured}}">
+                    <button id="button-devour" class="devour" data-id="{{id}}" data-devour="{{devoured}}">
                     Devour it!</button></li>
                 {{/unless}}
               {{/each}}
@@ -43,6 +21,10 @@
 
 			<div class="col-lg-4 col-md-2">
 				<div class="row">
+						<div class="col-lg-12 header-center">
+        <div><img id="img-burger" src="../assets/images/burger-icon-black.png" alt="burger" /></div>
+				<h1>EAT DA BURGER!</h1>
+				<h3>If you can dream it, you can eat it!</h3>
 					<h2>Create Your Burger</h2>
             <form class="create-form">
 
@@ -54,11 +36,11 @@
 
               
             </form>
+			</div>
 				</div>
 				
 			</div>
 			<div class="col-lg-4 col-md-4">
-				<div class="row">
 					<div class="col-lg-12 col-md-12">
 						<div ><h2>Devoured Burgers</h2></div>
 					    <ul>
@@ -69,11 +51,27 @@
                 {{/each}}
               </ul>
 					</div>
-				</div>
-			
 			</div>
-			
 </section>
 
+<section class="row">
+	<div class="col-lg-4 col-md-4">
+		<div class="row">
 
+		</div>
+	</div>
 
+	<div class="col-lg-4 col-md-2">
+		<div class="row">
+
+		</div>
+
+	</div>
+	<div class="col-lg-4 col-md-4">
+		<div class="row">
+
+		</div>
+
+	</div>
+
+</section>
