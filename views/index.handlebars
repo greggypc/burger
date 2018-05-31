@@ -19,7 +19,7 @@
 				</div>
 			</div>
 
-			<div class="col-lg-4 col-md-2">
+			<div class="col-lg-4 col-md-4">
 				<div class="row">
 						<div class="col-lg-12 header-center">
         <div><img id="img-burger" src="../assets/images/burger-icon-black.png" alt="burger" /></div>
@@ -28,22 +28,25 @@
 					<h2>Create Your Burger</h2>
             <form class="create-form">
 
-              <div class="form-group">
+							<div class="col-lg-1 col-md-1"></div>
+              <div class="form-group col-lg-10 col-md-10">
                 <label for="burg">Burger Name:</label>
-                <input type="text" id="burg" name="name" />
-                <button type="submit">Add Burger</button>
+                <input class="form-control input-lg" type="text" id="burg" aria-describedby="Your Burger Name" name="name" />
+                <button id="add-burger" class="btn-lg" type="submit">Add Burger</button>
               </div>
+							<div class="col-lg-1 col-md-1"></div>
 
-              
+ 
             </form>
+					</div>
+				</div>	
 			</div>
-				</div>
-				
-			</div>
+
 			<div class="col-lg-4 col-md-4">
+				<div class="row">
 					<div class="col-lg-12 col-md-12">
 						<div ><h2>Devoured Burgers</h2></div>
-					    <ul>
+					    <ul id="pad-right">
                 {{#each burger}}
                   {{#if devoured}}
                     <li>{{burger_name}}</li>
@@ -51,27 +54,6 @@
                 {{/each}}
               </ul>
 					</div>
+				</div>
 			</div>
-</section>
-
-<section class="row">
-	<div class="col-lg-4 col-md-4">
-		<div class="row">
-
-		</div>
-	</div>
-
-	<div class="col-lg-4 col-md-2">
-		<div class="row">
-
-		</div>
-
-	</div>
-	<div class="col-lg-4 col-md-4">
-		<div class="row">
-
-		</div>
-
-	</div>
-
 </section>
