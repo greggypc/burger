@@ -64,7 +64,7 @@ function printQuestionMarks(num) {
         cb(result);
       });
     },
-    // An example of objColVals would be {name: panther, sleepy: true}
+    // An example of objColVals would be {burger: big mac, devoured: true}
     updateOne: function(table, objColVals, condition, cb) {
       var queryString = "UPDATE " + table;
   
@@ -81,8 +81,21 @@ function printQuestionMarks(num) {
   
         cb(result);
       });
+    },
+    delete: function(table, condition, cb) {
+      var queryString = "DELETE FROM " + table;
+      queryString += " WHERE ";
+      queryString += condition;
+
+      connection.query(queryString, function(err, result) {
+        if (err) {
+          console.log("delete not working");
+          throw err;
+        }
+        cb(result);
+      });
     }
   };
   
-  // Export the orm object for the model (cat.js).
+  // Export the orm object for the model (burger.js).
   module.exports = orm;
