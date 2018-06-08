@@ -1,4 +1,4 @@
-//burger
+// Burger app express server
 
 var express = require("express");
 var bodyParser = require("body-parser");
@@ -17,14 +17,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
-// Set Handlebars.
+// Set Handlebars
 var exphbs = require("express-handlebars");
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-// Import routes and give the server access to them.
-var routes = require("./controllers/burgers_controller.js");
+// Import routes and give the server access to them
+var routes = require("./controllers/burgersController.js");
 
 app.use(routes);
 
