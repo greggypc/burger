@@ -1,22 +1,21 @@
 
-
-.label {
-  font-weight: bold;
-}
-
-.create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
-}
-
-.form-group {
-  margin-bottom: 5px;
+body {
+  background-color: #e9e9e9;
+  margin: 0 auto;
 }
 
 h1, h2, h3, p {
   font-family: 'Jua', sans-serif;
   text-align: center;
+  color: #444;
+}
+
+.header-center {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 5px;
 }
 
 #pad-right {
@@ -27,11 +26,8 @@ li {
   list-style: none;
   padding: 10px;
   margin: 8px;
-  background-color: #5a5858;
-  color: #e9e9e9
-}
-#button-devour {
-  color: #333;
+  /* background-color: #5a5858;
+  color: #e9e9e9 */
 }
 
 #img-burger {
@@ -43,6 +39,4 @@ li {
   margin-top: 8px;
 }
 
-.header-center {
-  text-align: center;
-}
+

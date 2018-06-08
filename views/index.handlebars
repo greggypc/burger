@@ -8,13 +8,12 @@
 				<h3>If you can dream it, you can eat it!</h3>
 					<h2>Create Your Burger</h2>
             <form class="create-form">
-							<div class="col-lg-1 col-md-1"></div>
-              <div class="form-group col-lg-10 col-md-10">
-                <label for="burg"><h3>Burger Name:</h3></label>
+							<div class="col-lg-4 col-md-2"></div>
+              <div class="form-group col-lg-4 col-md-8">
                 <input class="form-control input-lg" type="text" id="burg" aria-describedby="Your Burger Name" name="name" />
                 <button id="add-burger" class="btn-lg" type="submit">Add Burger</button>
               </div>
-							<div class="col-lg-1 col-md-1"></div>
+							<div class="col-lg-4 col-md-2"></div>
             </form>
 					</div>
 				</div>	
@@ -24,14 +23,14 @@
 			<div class="col-lg-6 col-md-6">
 				<div class="row">
 					<div class="col-lg-12 col-md-12">
-						<div><h1>Burger to Eat</h1></div>
+						<div><h1>BURGERS TO EAT</h1></div>
 						<div >
               <ul id="pad-right">
 							<h3>
               {{#each burger}}
                 {{#unless devoured}}
                  <li>{{burger_name}}
-                    <button id="button-devour" class="devour" data-id="{{id}}" data-devour="{{devoured}}">
+                    <button class="devour btn btn-success" data-id="{{id}}" data-devour="{{devoured}}">
                     Devour it!</button></li>
                 {{/unless}}
               {{/each}}
@@ -46,14 +45,14 @@
 			<div class="col-lg-6 col-md-6">
 				<div class="row">
 					<div class="col-lg-12 col-md-12">
-						<div><h1>Devoured Burgers</h1></div>
+						<div><h1>DEVOURED BURGERS</h1></div>
 					    <ul id="pad-right">
 								<h3>
                 {{#each burger}}
                   {{#if devoured}}
                     <li>{{burger_name}}
-											<button id="button-devour" class="delete-burger" data-id="{{this.id}}">
-                    Delete</button></li>
+											<button class="delete-burger btn btn-danger" data-id="{{this.id}}">
+                    Delete it</button></li>
                   {{/if}}
                 {{/each}}
 								</h3>
